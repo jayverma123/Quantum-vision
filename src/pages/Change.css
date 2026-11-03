@@ -1,0 +1,492 @@
+/* =========================================
+   QUANTUM VISION — CHANGE ANALYSIS
+   Dark analyst-workbench theme
+   ========================================= */
+
+.qv-change-page {
+    min-height: 100vh;
+    padding: 36px 24px 64px;
+    background: #050b14;
+    color: #eaf2fa;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.qv-change-page *,
+.qv-change-page *::before,
+.qv-change-page *::after {
+    box-sizing: border-box;
+}
+
+.qv-change-page>div {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ---------- Page heading ---------- */
+
+.qv-change-page>div>header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 28px;
+    padding: 8px 0 30px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #1d2b3b;
+}
+
+.qv-change-page>div>header>div {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    min-width: 0;
+}
+
+.qv-change-page>div>header>div>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    color: #71d9f0;
+    background: #0b1a28;
+    border: 1px solid #244054;
+    border-radius: 12px;
+}
+
+.qv-change-page>div>header p {
+    margin: 0;
+    color: #8fa9c4;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.qv-change-page>div>header>div>div:last-child>p {
+    margin-bottom: 8px;
+    color: #73d9ef;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.qv-change-page h1 {
+    margin: 0;
+    color: #f2f7fc;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 750;
+    letter-spacing: -1.2px;
+    line-height: 1.15;
+}
+
+.qv-change-page>div>header>p {
+    max-width: 470px;
+}
+
+/* ---------- Form layout ---------- */
+
+.qv-change-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.qv-change-page form>div:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* ---------- Before and After cards ---------- */
+
+.qv-change-page form>div:first-child>section,
+.qv-change-page form>section,
+.qv-change-page>div>section {
+    min-width: 0;
+    padding: 26px;
+    background: #08111d;
+    border: 1px solid #203246;
+    border-radius: 14px;
+}
+
+.qv-change-page form>div:first-child>section>div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+.qv-change-page form>div:first-child>section>div:first-child>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #70d9f1;
+    background: #0d2030;
+    border: 1px solid #23465a;
+    border-radius: 10px;
+}
+
+.qv-change-page h2 {
+    margin: 0;
+    color: #f0f6fc;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.qv-change-page form>div:first-child>section>div:first-child p {
+    margin: 5px 0 0;
+    color: #8ca4bd;
+    font-size: 13px;
+}
+
+/* ---------- Labels and form controls ---------- */
+
+.qv-change-page label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 18px 0 9px;
+    color: #c4d3e2;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.qv-change-page input[type="date"],
+.qv-change-page input[type="text"] {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    padding: 11px 13px;
+    color: #edf6ff;
+    background: #050c15;
+    border: 1px solid #2a3d51;
+    border-radius: 8px;
+    outline: none;
+    font: inherit;
+    font-size: 14px;
+    color-scheme: dark;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.qv-change-page input[type="date"]:focus,
+.qv-change-page input[type="text"]:focus {
+    border-color: #69d5ed;
+    box-shadow: 0 0 0 3px rgb(105 213 237 / 10%);
+}
+
+.qv-change-page input::placeholder {
+    color: #637b94;
+}
+
+/* ---------- File upload area ---------- */
+
+.qv-change-page form>div:first-child>section>div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 22px;
+    padding: 24px 18px;
+    text-align: center;
+    background: #07101a;
+    border: 1px dashed #36516a;
+    border-radius: 10px;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.qv-change-page form>div:first-child>section>div:nth-of-type(2):hover {
+    background: #0a1825;
+    border-color: #70d9f1;
+}
+
+.qv-change-page form>div:first-child>section>div:nth-of-type(2)>svg {
+    color: #71d9f0;
+}
+
+.qv-change-page form>div:first-child>section>div:nth-of-type(2) p {
+    margin: 0;
+    color: #e2edf8;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.qv-change-page form>div:first-child>section>div:nth-of-type(2) p+p {
+    color: #8ca4bd;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.qv-change-page input[type="file"] {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    color: #a9bfd4;
+    background: #091522;
+    border: 1px solid #263b50;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.qv-change-page input[type="file"]::file-selector-button {
+    margin-right: 12px;
+    padding: 9px 13px;
+    color: #07111c;
+    background: #75d9ee;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.qv-change-page input[type="file"]::file-selector-button:hover {
+    background: #a0eafa;
+}
+
+/* ---------- Selected files ---------- */
+
+.qv-change-page .mt-4 {
+    margin-top: 18px;
+}
+
+.qv-change-page .mb-3 {
+    margin-bottom: 12px;
+}
+
+.qv-change-page .flex {
+    display: flex;
+}
+
+.qv-change-page .flex-wrap {
+    flex-wrap: wrap;
+}
+
+.qv-change-page .gap-2 {
+    gap: 8px;
+}
+
+.qv-change-page .rounded-full {
+    border-radius: 999px;
+}
+
+.qv-change-page .bg-blue-50,
+.qv-change-page .bg-purple-50,
+.qv-change-page .bg-gray-100 {
+    padding: 6px 10px;
+    color: #a9e8f5;
+    background: #102b3b;
+    border: 1px solid #21485a;
+    font-size: 11px;
+}
+
+.qv-change-page ul {
+    margin: 0;
+    padding: 12px;
+    list-style: none;
+    background: #050c15;
+    border: 1px solid #24384c;
+    border-radius: 8px;
+}
+
+.qv-change-page li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    color: #d9e6f2;
+    border-bottom: 1px solid #192a3a;
+}
+
+.qv-change-page li:last-child {
+    border-bottom: 0;
+}
+
+.qv-change-page .text-gray-500,
+.qv-change-page .text-gray-700 {
+    color: #8da5bd;
+}
+
+.qv-change-page .text-red-600 {
+    color: #ff8e9a;
+}
+
+/* ---------- Region and analysis button ---------- */
+
+.qv-change-page form>section>label {
+    margin-top: 0;
+}
+
+.qv-change-page form>section>p {
+    margin: 13px 0 0;
+    color: #829ab2;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.qv-change-page button[type="submit"] {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 48px;
+    margin-top: 22px;
+    padding: 12px 22px;
+    color: #06111b;
+    background: #78dcef;
+    border: 1px solid #78dcef;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 750;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.qv-change-page button[type="submit"]:hover:not(:disabled) {
+    background: #a4edfa;
+    transform: translateY(-1px);
+}
+
+.qv-change-page button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.qv-change-page button[type="button"] {
+    padding: 8px 0;
+    background: transparent;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* ---------- Errors ---------- */
+
+.qv-change-page [role="alert"] {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 14px;
+    color: #ffb7bf;
+    background: #29131b;
+    border: 1px solid #68303c;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.qv-change-page [role="alert"] svg {
+    flex-shrink: 0;
+}
+
+/* ---------- Analysis results ---------- */
+
+.qv-change-page>div>section {
+    margin-top: 24px;
+}
+
+.qv-change-page>div>section>div:first-child {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.qv-change-page>div>section>div:first-child>svg {
+    flex-shrink: 0;
+    color: #75dfb0;
+}
+
+.qv-change-page>div>section p {
+    color: #91a8bf;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.qv-change-page>div>section img {
+    display: block;
+    width: 100%;
+    max-height: 560px;
+    object-fit: contain;
+    margin-top: 16px;
+    background: #040a12;
+    border: 1px solid #263b50;
+    border-radius: 10px;
+}
+
+.qv-change-page details {
+    margin-top: 18px;
+    padding: 14px;
+    color: #b8ccdf;
+    background: #050c15;
+    border: 1px solid #24384c;
+    border-radius: 8px;
+}
+
+.qv-change-page summary {
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.qv-change-page pre {
+    max-width: 100%;
+    overflow-x: auto;
+    color: #a5e4f1;
+    font-size: 12px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* ---------- Responsive layout ---------- */
+
+@media (max-width: 900px) {
+    .qv-change-page>div>header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .qv-change-page>div>header>p {
+        max-width: 650px;
+    }
+
+    .qv-change-page form>div:first-child {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .qv-change-page {
+        padding: 24px 14px 40px;
+    }
+
+    .qv-change-page>div>header {
+        gap: 18px;
+        padding-bottom: 22px;
+    }
+
+    .qv-change-page h1 {
+        font-size: 29px;
+    }
+
+    .qv-change-page form>div:first-child>section,
+    .qv-change-page form>section,
+    .qv-change-page>div>section {
+        padding: 18px;
+    }
+
+    .qv-change-page form>div:first-child>section>div:nth-of-type(2) {
+        padding: 18px 12px;
+    }
+
+    .qv-change-page button[type="submit"] {
+        width: 100%;
+    }
+}

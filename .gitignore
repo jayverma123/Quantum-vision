@@ -1,0 +1,30 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Node
+node_modules/
+dist/
+
+# VS Code
+.vscode/
+
+# Python cache
+.pytest_cache/
+
+# Uploaded and downloaded satellite data
+uploads/
+data/
+*.tif
+*.tiff
+
+# System files
+.DS_Store
+Thumbs.db
